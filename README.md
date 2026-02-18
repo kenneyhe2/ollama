@@ -1,0 +1,2 @@
+# ollama
+install local ollama
