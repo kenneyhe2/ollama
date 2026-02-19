@@ -5,14 +5,14 @@ install local ollama
 ```bash
 mv ollama-darwin ~/Applications/
 cd ~/Applications 
-chmod u+x ollama
+chmod u+x ~/Applications/ollama-darwin/ollama
 ./ollama
 
 # follow steps
 ```
 
 ## create new model
-``` bash
+```
 # download from https://huggingface.co/bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF/tree/main
 cd ~/Applications/
 echo "FROM ~/Downloads/DeepSeek-R1-Distill-Llama-8B-Q4_K_M.gguf" > ~/Downloads/Modelfile
@@ -31,13 +31,4 @@ success
 i was just thinking, maybe we can set up a small project where you suggest some new features or ideas for 
 this site. i want to make it better, so your input would be really helpful.
 ...
-```
-
-## install claude-code
-``` bash
-npm config set prefix '~/.homebrew'
-echo 'export PATH="$HOME/.homebrew/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-npm config set fund false
-npm install -g @anthropic-ai/claude-code
 ```
